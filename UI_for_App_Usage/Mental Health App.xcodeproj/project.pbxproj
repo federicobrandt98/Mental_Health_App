@@ -14,6 +14,9 @@
 		C9446D03241716F10049E180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9446D02241716F10049E180 /* Assets.xcassets */; };
 		C9446D06241716F10049E180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9446D04241716F10049E180 /* LaunchScreen.storyboard */; };
 		C9446D102418D3D80049E180 /* AppSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9446D0F2418D3D80049E180 /* AppSelectionView.swift */; };
+		C95B26BD241AAF6F00A6AAE0 /* MHSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B26BC241AAF6F00A6AAE0 /* MHSurveyViewController.swift */; };
+		C9707D0F241A6E4F00AC6F93 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9707D0E241A6E4F00AC6F93 /* CoreLocation.framework */; };
+		C9707D11241A6F2500AC6F93 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9707D10241A6F2500AC6F93 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C9446D05241716F10049E180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9446D07241716F10049E180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9446D0F2418D3D80049E180 /* AppSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectionView.swift; sourceTree = "<group>"; };
+		C95B26BC241AAF6F00A6AAE0 /* MHSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSurveyViewController.swift; sourceTree = "<group>"; };
+		C9707D0E241A6E4F00AC6F93 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C9707D10241A6F2500AC6F93 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9707D0F241A6E4F00AC6F93 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				C9446CF8241716EE0049E180 /* Mental Health App */,
 				C9446CF7241716EE0049E180 /* Products */,
+				C9707D0D241A6E4E00AC6F93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +74,18 @@
 				C9446D04241716F10049E180 /* LaunchScreen.storyboard */,
 				C9446D07241716F10049E180 /* Info.plist */,
 				C9446D0F2418D3D80049E180 /* AppSelectionView.swift */,
+				C9707D10241A6F2500AC6F93 /* LocationViewController.swift */,
+				C95B26BC241AAF6F00A6AAE0 /* MHSurveyViewController.swift */,
 			);
 			path = "Mental Health App";
+			sourceTree = "<group>";
+		};
+		C9707D0D241A6E4E00AC6F93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9707D0E241A6E4F00AC6F93 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9707D11241A6F2500AC6F93 /* LocationViewController.swift in Sources */,
 				C9446CFE241716EE0049E180 /* ViewController.swift in Sources */,
 				C9446CFA241716EE0049E180 /* AppDelegate.swift in Sources */,
 				C9446CFC241716EE0049E180 /* SceneDelegate.swift in Sources */,
 				C9446D102418D3D80049E180 /* AppSelectionView.swift in Sources */,
+				C95B26BD241AAF6F00A6AAE0 /* MHSurveyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
